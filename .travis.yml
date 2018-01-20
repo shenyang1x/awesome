@@ -1,6 +1,7 @@
 sudo: false
 language: python
 python:
-  - 3.6
-script: pytest
+  - 3.6.3
+script:
+  - python pytest.py test
 install: true
