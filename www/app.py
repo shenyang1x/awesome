@@ -24,8 +24,8 @@ from handlers import cookie2user, COOKIE_NAME
 
 
 def init_jinja2(app, **kw):
-    print a+4
     print('abctest')
+    print('print')
     logging.info('init jinja2...')
     options = dict(
         autoescape=kw.get('autoescape', True),
