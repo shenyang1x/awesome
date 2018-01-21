@@ -2,7 +2,11 @@ sudo: false
 language: python
 python:
   - 3.6.3
+services:
+  - mysql
+before_install:
+  - mysql -e schema.sql
+install:
+  - pip install aiohttp jinja2 aiomysql
 script:
   - python www/app.py test
-install:
-    - pip install aiohttp jinja2 aiomysql
