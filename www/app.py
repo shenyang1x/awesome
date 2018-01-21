@@ -21,6 +21,7 @@ import orm
 from coroweb import add_routes, add_static
 
 from handlers import cookie2user, COOKIE_NAME
+import time
 
 
 def init_jinja2(app, **kw):
@@ -173,4 +174,4 @@ def init(loop):
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
-loop.run_forever()
+# loop.run_forever()
